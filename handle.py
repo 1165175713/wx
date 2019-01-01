@@ -14,7 +14,7 @@ class Handle(object):
             timestamp = data.timestamp
             nonce = data.nonce
             echostr = data.echostr
-            token = "xxxx" #请按照公众平台官网\基本配置中信息填写
+            token = "Ilovemengmeng"
 
             list = [token, timestamp, nonce]
             list.sort()
