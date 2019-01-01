@@ -4,7 +4,8 @@ class Msg(object):
     def __init__(self):
         pass
     def send(self):
-        return "success"class TextMsg(Msg):
+        return "success"
+class TextMsg(Msg):
     def __init__(self, toUserName, fromUserName, content):
         self.__dict = dict()
         self.__dict['ToUserName'] = toUserName
@@ -22,7 +23,7 @@ class Msg(object):
         </xml>
         """
         return XmlForm.format(**self.__dict)
-    class ImageMsg(Msg):
+class ImageMsg(Msg):
     def __init__(self, toUserName, fromUserName, mediaId):
         self.__dict = dict()
         self.__dict['ToUserName'] = toUserName
